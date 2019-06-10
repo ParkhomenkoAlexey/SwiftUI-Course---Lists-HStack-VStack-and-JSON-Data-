@@ -11,11 +11,10 @@ import Foundation
 import UIKit
 import SwiftUI
 
+let swiftbook = UserResponse(id: 1001, name: "Swiftbook", profileImage: "swiftbook", email: "info@swiftbook.ru", likes: "54.4K", text: "Обучение созданию приложений на Swift для всех!\nСамое крупное и дружное сообщество по разработке под iOS :)")
 
-
+let materialResponse: [ProductsResponse] = load("coursesModelData.json")
 let userResponse: [UserResponse] = load("userModelData.json")
-
-
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

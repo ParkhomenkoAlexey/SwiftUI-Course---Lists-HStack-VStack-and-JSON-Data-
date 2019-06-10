@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct FriendsList : View {
     var body: some View {
         NavigationView {
             List(userResponse) { user in
@@ -20,9 +20,9 @@ struct ContentView : View {
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct FriendsList_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FriendsList()
     }
 }
 #endif
